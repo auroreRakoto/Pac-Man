@@ -1,1 +1,60 @@
-escape does not work
+✔ escape does not work @done(26-06-04 15:01)
+
+Change code into OOP:
+    display is currently done by functions
+    use class to do it
+    notes -> is __sub__ usefull?
+
+Multiple mode:
+    normal mode (pac man assets)
+    42 mode (42 student running from norminette)
+        getting tiged if catch by bocal
+        opens new window that can't be closed unless mini game is done (cleaning the pcs)
+        image with a bottle on the desk and big exclamation mark
+    belgian mode
+        frites to eat
+
+Sound:
+    Menu music
+    Game music
+    Pause music
+    Phantom scared music
+    Button Click SFX
+    Life lost SFX
+
+Put a way to pause the game:
+    frame by frame gameplay?
+        need a state and next state maybe previous state?
+    if running
+        normal
+    if paused
+        would be great if the animation continues
+
+how to handle button click:
+    notes:
+        ☐ double input enable
+            ☐ mouse click
+                ☐ animation
+            ☐ navigate with arrow
+                ☐ show currently selected
+        ☐ is it possible to hover over a button?
+        ☐ wait a bit for the animation when selecting a button
+        ☐ sound?
+        ☐ who is responsible for running the buttons functions?
+    method 1:
+        if in correct window (window with a button)
+            if there is a button at mouse click
+                activate corresponding button
+        need a list of all the coords of every button in the page
+    method 2:
+        for each button
+            if the coords of the mouse is in
+                activate button
+        need to check for every button whenever there is a mouse click
+    method 3:
+        put a button selected state
+        put a button clicked state
+
+on personnal computer in wsl
+    sudo apt update
+    sudo apt install libxcb-keysyms1
